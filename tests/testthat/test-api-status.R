@@ -1,3 +1,5 @@
 test_that("gh_api_status() works", {
-  testthat::expect_type(gh_api_status(), "character")
+  vcr::local_cassette("gh_api_status")
+  status <- gh_api_status()
+  expect_type(status, "character")
 })

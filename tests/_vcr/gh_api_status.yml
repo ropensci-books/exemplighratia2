@@ -1,0 +1,54 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://kctbh9vrtdwd.statuspage.io/api/v2/components.json
+  response:
+    status: 200
+    headers:
+      content-type: application/json; charset=utf-8
+      date: Tue, 09 Sep 2025 10:09:28 GMT
+      x-download-options: noopen
+      x-permitted-cross-domain-policies: none
+      referrer-policy: strict-origin-when-cross-origin
+      x-statuspage-version: b27f95704d5835d5f1a3ccc341503d3f7f22f502
+      strict-transport-security: max-age=259200
+      x-statuspage-skip-logging: 'true'
+      access-control-allow-origin: '*'
+      cache-control: max-age=3, public
+      x-pollinator-metadata-service: status-page-web-pages
+      etag: W/"81603fa0d180d761ce3b3c3c02d68741"
+      x-runtime: '0.049065'
+      server: AtlassianEdge
+      accept-ranges: bytes
+      x-content-type-options: nosniff
+      x-xss-protection: 1; mode=block
+      atl-traceid: daa0d6503446464e9748ed3a8634ead0
+      atl-request-id: daa0d650-3446-464e-9748-ed3a8634ead0
+      report-to: '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}],
+        "group": "endpoint-1", "include_subdomains": true, "max_age": 600}'
+      nel: '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600,
+        "report_to": "endpoint-1"}'
+      content-encoding: br
+      server-timing: atl-edge;dur=129,atl-edge-internal;dur=5,atl-edge-upstream;dur=125,atl-edge-pop;desc="aws-us-east-1"
+      vary: Accept,Accept-Encoding
+      x-cache: Miss from cloudfront
+      via: 1.1 dd239fa6f06e5b3ae1437460dbc3d6a6.cloudfront.net (CloudFront)
+      x-amz-cf-pop: MRS53-P3
+      x-amz-cf-id: K63D5rR4HMl9WRamA6Yzh8R6SuF2vfDOuh8W-bgc1kUo-xGdrVZp9g==
+    body:
+      string: '{"page":{"id":"kctbh9vrtdwd","name":"GitHub","url":"https://www.githubstatus.com","time_zone":"Etc/UTC","updated_at":"2025-09-09T10:00:59.457Z"},"components":[{"id":"8l4ygp009s5s","name":"Git
+        Operations","status":"operational","created_at":"2017-01-31T20:05:05.370Z","updated_at":"2025-08-21T06:58:30.069Z","position":1,"description":"Performance
+        of git clones, pulls, pushes, and associated operations","showcase":false,"start_date":null,"group_id":null,"page_id":"kctbh9vrtdwd","group":false,"only_show_if_degraded":false},{"id":"4230lsnqdsld","name":"Webhooks","status":"operational","created_at":"2019-11-13T18:00:24.256Z","updated_at":"2025-08-05T16:14:01.686Z","position":2,"description":"Real
+        time HTTP callbacks of user-generated and system events","showcase":false,"start_date":null,"group_id":null,"page_id":"kctbh9vrtdwd","group":false,"only_show_if_degraded":false},{"id":"0l2p9nhqnxpd","name":"Visit
+        www.githubstatus.com for more information","status":"operational","created_at":"2018-12-05T19:39:40.838Z","updated_at":"2025-03-19T05:00:21.309Z","position":3,"description":null,"showcase":false,"start_date":null,"group_id":null,"page_id":"kctbh9vrtdwd","group":false,"only_show_if_degraded":false},{"id":"brv1bkgrwx7q","name":"API
+        Requests","status":"operational","created_at":"2017-01-31T20:01:46.621Z","updated_at":"2025-09-04T20:25:47.243Z","position":4,"description":"Requests
+        for GitHub APIs","showcase":false,"start_date":null,"group_id":null,"page_id":"kctbh9vrtdwd","group":false,"only_show_if_degraded":false},{"id":"kr09ddfgbfsf","name":"Issues","status":"operational","created_at":"2017-01-31T20:01:46.638Z","updated_at":"2025-08-27T21:27:47.854Z","position":5,"description":"Requests
+        for Issues on GitHub.com","showcase":false,"start_date":null,"group_id":null,"page_id":"kctbh9vrtdwd","group":false,"only_show_if_degraded":false},{"id":"hhtssxt0f5v2","name":"Pull
+        Requests","status":"operational","created_at":"2020-09-02T15:39:06.329Z","updated_at":"2025-08-12T17:56:13.209Z","position":6,"description":"Requests
+        for Pull Requests on GitHub.com","showcase":false,"start_date":null,"group_id":null,"page_id":"kctbh9vrtdwd","group":false,"only_show_if_degraded":false},{"id":"br0l2tvcx85d","name":"Actions","status":"operational","created_at":"2019-11-13T18:02:19.432Z","updated_at":"2025-08-21T18:13:02.491Z","position":7,"description":"Workflows,
+        Compute and Orchestration for GitHub Actions","showcase":false,"start_date":null,"group_id":null,"page_id":"kctbh9vrtdwd","group":false,"only_show_if_degraded":false},{"id":"st3j38cctv9l","name":"Packages","status":"operational","created_at":"2019-11-13T18:02:40.064Z","updated_at":"2025-08-14T18:37:12.106Z","position":8,"description":"API
+        requests and webhook delivery for GitHub Packages","showcase":false,"start_date":null,"group_id":null,"page_id":"kctbh9vrtdwd","group":false,"only_show_if_degraded":false},{"id":"vg70hn9s2tyj","name":"Pages","status":"operational","created_at":"2017-01-31T20:04:33.923Z","updated_at":"2025-06-17T20:03:36.357Z","position":9,"description":"Frontend
+        application and API servers for Pages builds","showcase":false,"start_date":null,"group_id":null,"page_id":"kctbh9vrtdwd","group":false,"only_show_if_degraded":false},{"id":"h2ftsgbw7kmk","name":"Codespaces","status":"operational","created_at":"2021-08-11T16:02:09.505Z","updated_at":"2025-07-21T09:47:56.207Z","position":10,"description":"Orchestration
+        and Compute for GitHub Codespaces","showcase":false,"start_date":"2021-08-11","group_id":null,"page_id":"kctbh9vrtdwd","group":false,"only_show_if_degraded":false},{"id":"pjmpxvq2cmr2","name":"Copilot","status":"operational","created_at":"2022-06-21T16:04:33.017Z","updated_at":"2025-08-27T21:36:28.924Z","position":11,"description":null,"showcase":false,"start_date":"2022-06-21","group_id":null,"page_id":"kctbh9vrtdwd","group":false,"only_show_if_degraded":false}]}'
+  recorded_at: 2025-09-09 10:09:28
+recorded_with: VCR-vcr/2.0.0

@@ -14,7 +14,8 @@ Imports:
     magrittr,
     purrr
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    vcr
 Config/testthat/edition: 3
 URL: https://github.com/maelle/exemplighratia2
 BugReports: https://github.com/maelle/exemplighratia2/issues
