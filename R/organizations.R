@@ -18,13 +18,13 @@ gh_v3_url <- function() {
 #' gh_organizations(since = 42)
 #' }
 gh_organizations <- function(since = 1) {
-  token <- gh::gh_token()
-
-  if (!nzchar(token)) {
-    stop(
-      "No token provided! Set up the GITHUB_PAT environment variable please."
+  if (!gh::gh_token_exists()) {
+    cli::cli_abort(
+      "No token provided! {.url https://usethis.r-lib.org/articles/git-credentials.html}."
     )
   }
+
+  token <- gh::gh_token()
 
   response <- httr2::request(gh_v3_url()) %>%
     httr2::req_url_path_append("organizations") %>%
