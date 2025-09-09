@@ -18,24 +18,26 @@ gh_v3_url <- function() {
 #' gh_organizations(since = 42)
 #' }
 gh_organizations <- function(since = 1) {
+  token <- gh::gh_token()
 
-  token <- Sys.getenv("GITHUB_PAT")
-
-  if (!nchar(token)) {
-    stop("No token provided! Set up the GITHUB_PAT environment variable please.")
+  if (!nzchar(token)) {
+    stop(
+      "No token provided! Set up the GITHUB_PAT environment variable please."
+    )
   }
 
   response <- httr2::request(gh_v3_url()) %>%
     httr2::req_url_path_append("organizations") %>%
     httr2::req_url_query(since = since) %>%
-    httr2::req_headers("Authorization" = paste("token", token)) %>%
+    httr2::req_headers(
+      "Authorization" = paste("token", token),
+      Accept = "application/vnd.github+json",
+      `X-GitHub-Api-Version` = "2022-11-28"
+    ) %>%
     httr2::req_retry(max_tries = 3, max_seconds = 120) %>%
     httr2::req_perform()
-
-  httr2::resp_check_status(response)
 
   content <- httr2::resp_body_json(response)
 
   purrr::map_chr(content, "login")
-
 }
